@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #2c3e50, #4b6584);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#ready {
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.progress {
+    height: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.progress--bar {
+    background-color: #f1c40f;
+    height: 100%;
+    transition: all ease .5s;
+}
+
+.questionArea,
+.scoreArea {
+    display: none;
+    
+}
+
+.questionArea {
+    max-width: 380px;
+    width: auto;
+    height: auto;
+    background-color: #2e5379;
+    padding: 15px;
+    border-radius: 18px;
+    margin: 15px;
+}
+
+.question {
+    color: #FFF;
+    font-size: 1.5rem;
+    margin: 25px 0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.option span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 70%;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 10px;
+}
+.option:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.scoreArea {
+    background-color: #2e5379;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+}
+.prizeImage {
+    width: auto;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.scoreText1 {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.scorePct {
+    color: #0d630d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.scoreText2 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.scoreArea button {
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.scoreArea button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+a{
+    color: #ffffff;
+}
+
+footer {
+    margin-top: 40px;
+    color: #FFF;
+    font-size: 13px;
+}
