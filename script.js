@@ -75,14 +75,14 @@ function finished(){
     document.querySelector('.scorePct').innerHTML = `Acertou ${pctCorrectQuestions}%`;
     document.querySelector('.scoreText2').innerHTML = `Você respondeu ${questions.length} questões e acertou ${correctQuestions}.`;
 
-    if(pctCorrectQuestions <= 30 ){
+    if(pctCorrectQuestions <= 40 ){
 
         document.querySelector('.scoreText1').innerHTML = 'Tá ruim hein';
         document.querySelector('.scorePct').style.color = 'red';
         
 
     } 
-    else if(pctCorrectQuestions > 30 && pctCorrectQuestions <= 70 ){
+    else if(pctCorrectQuestions > 40 && pctCorrectQuestions <= 70 ){
 
         document.querySelector('.scoreText1').innerHTML = 'Foi bem demais!';
         document.querySelector('.scorePct').style.color = 'blue';
